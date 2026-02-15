@@ -1,14 +1,16 @@
 """Statistical Arbitrage Pairs Trading"""
 
-from .pairs_finder import find_cointegrated_pairs, engle_granger_test, calculate_hurst_exponent
-from .trading_strategy import PairsTradingStrategy
-from .backtest import run_pairs_backtest, print_results
+from .pairs_finder import find_cointegrated_pairs, PairStats
+from .trading_strategy import PairsTradingStrategy, Trade
+from .backtest import RollingWindowBacktest
+from .data_loader import download_stock_data, get_sp500_tickers
 
 __all__ = [
     'find_cointegrated_pairs',
-    'engle_granger_test', 
-    'calculate_hurst_exponent',
+    'PairStats',
     'PairsTradingStrategy',
-    'run_pairs_backtest',
-    'print_results'
+    'Trade',
+    'RollingWindowBacktest',
+    'download_stock_data',
+    'get_sp500_tickers'
 ]

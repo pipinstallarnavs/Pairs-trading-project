@@ -1,0 +1,7 @@
+INTERVIEW_GUIDE.md
+START_HERE.md
+STUDY_GUIDE.md
+__pycache__/
+.DS_Store
+venv/
+{src,data,results}/
